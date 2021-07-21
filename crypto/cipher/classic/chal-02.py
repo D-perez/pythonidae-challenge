@@ -31,7 +31,9 @@ def decrypt():
             decrypted_text += ' '
             continue
         p = ord(letter) - 97 # p stands for position
-        decrypted_text += chr(((a**-1) * (p - b) % 26) + 97)
+        print(p)
+        print(a**(-1))
+        decrypted_text += chr(int(((pow(a,-1,26)) * (p - b)) % 26 + 97))
     print(decrypted_text)
 
 decrypt()
