@@ -20,6 +20,8 @@ def encrypt():
         p = ord(letter) - 97 # p stands for position
         encrypted_text += chr((a*p+b)% 26 + 97)
     print(input_string,'\n',encrypted_text)
+
+    
 # decrypt
 
 
