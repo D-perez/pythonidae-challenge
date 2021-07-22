@@ -11,7 +11,7 @@ horel ollwd
 
 import sys
 
-r = 5
+r = int(sys.argv[2])
 string = sys.argv[1]
 string = string.replace(' ','_') # this saves spaces in the string so they are not deleted later
 cipher_text = []
