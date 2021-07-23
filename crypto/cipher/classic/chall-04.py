@@ -37,11 +37,11 @@ alphabet = 'abcdefghijklmnopqrstuvwxyz'
 grid = [] # making the grid up there ^^^
 
 key =  sys.argv[1]
-text = sys.argv[2]
+clear_text = sys.argv[2]
 
 
-if len(key) != len(text): # this makes sure the key repeats until it is the same length as the text
-    for i in range(len(text) - len(key)):
+if len(key) != len(clear_text): # this makes sure the key repeats until it is the same length as the text
+    for i in range(len(clear_text) - len(key)):
         key += key[i]
 
 print(key)
@@ -55,9 +55,9 @@ for i in range(len(alphabet)): # creates the grid
 
 
 
-e = ''
+enciphered_text = ''
 
-for i in range(len(text)):
-    e += grid[alphabet.index(key[i])][alphabet.index(text[i])]
+for i in range(len(clear_text)):
+    enciphered_text += grid[alphabet.index(key[i])][alphabet.index(clear_text[i])]
 
-print(e)
+print(enciphered_text) 
