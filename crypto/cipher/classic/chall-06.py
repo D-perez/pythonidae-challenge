@@ -8,6 +8,9 @@ V | s 5 z w 7 b
 X | j 9 u t i 8
 
 '''
+from typing import Dict
+
+
 indexes_of_letters = {
 '0':'A',
 '1':'D',
@@ -27,7 +30,8 @@ grid = [
 ['j','9','u','t','i','8']]
 
 
-clear_text = 'test'
+clear_text = 'testing'
+key = 'yolo'
 enciphered_text = '' 
 
 for letter in clear_text:
@@ -38,3 +42,17 @@ for letter in clear_text:
             enciphered_text += indexes_of_letters[str(i)]+indexes_of_letters[str(grid[i].index(letter))]
 
 print(enciphered_text)
+
+unsorted_key_len_grid = []
+
+for i in range(0,len(enciphered_text),len(key)):
+    unsorted_key_len_grid.append(enciphered_text[i:i+len(key)])
+
+print(unsorted_key_len_grid)
+
+key_indexes = []
+
+for letter in key:
+    key_indexes.append(letter)
+
+print(sorted(key_indexes))
