@@ -17,10 +17,3 @@ scan()
 
 
 
-
-# for file in files:
-#     if file.is_dir():
-#         next = os.scandir(file.path)
-#         for next_file in next:
-#             if file.is_dir():
-#                 print(os.scandir())
