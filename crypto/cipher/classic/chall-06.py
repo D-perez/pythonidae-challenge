@@ -50,9 +50,29 @@ for i in range(0,len(enciphered_text),len(key)):
 
 print(unsorted_key_len_grid)
 
+
+ 
+''' 
+   y       o       l      o
+['XGDF', 'VAXG', 'XVFF', 'AV']
+
+   l        o      o      y
+['XVFF', 'VAXG', 'AV', 'XGDF']
+
+''' 
+
 key_indexes = []
 
-for letter in key:
-    key_indexes.append(letter)
+for i in range(len(key)):
+    key_indexes.append(key[i])
 
-print(sorted(key_indexes))
+
+key_indexes = sorted(key_indexes)
+
+for i in range(len(key_indexes)):
+    key_indexes[i] += str(i)
+
+print(key_indexes)
+
+
+
