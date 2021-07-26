@@ -1,3 +1,17 @@
+--- 
+
+# This is my write up of the  Pythonidae Challenge
+
+---
+
+
+## Layout
+
+For every chall-0X.md file there is a corresponding chall-0X.py file in which I will write my solution to the problem. 
+
+
+---
+
 # Pythonidae Challenge
 
 Learn Python for Cyber Security by completing challenges.
