@@ -1,6 +1,17 @@
-string_length = 2
-alphabet = 'abcdefghijklmnopqrstuvwxyz'
+# # recursion bruteforce
+# wordlist = []
+# def brute(string, length, charset):
+#     if len(string) == length:
+#         return 0
+#     for char in charset:
+#         temp = string + char
+#         if len(temp) >= length: wordlist.append(temp)
+#         brute(temp, length, charset)
 
-for i in range(string_length):
-    for o in range(len(alphabet)):
-        print(alphabet[i],alphabet[o])
+# brute('', 3, 'abcdefghijklmnopqrstuvwxyz')
+
+# print(wordlist)
+
+
+# itertools brute force
+
